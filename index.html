@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domaine de Beauvent, vignerons à Bernex</title>
+<meta name="description" content="Seize hectares de vigne au-dessus de Genève. Le caveau de la famille Cruz ouvre onze heures par semaine, du mardi au vendredi de 17h à 19h et le samedi de 9h à 12h.">
+<meta name="theme-color" content="#E9ECE5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23E9ECE5'/%3E%3Cpath d='M2 24 C 10 22, 13 12, 20 9 C 25 7, 28 8, 30 10' fill='none' stroke='%2314201A' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='23' cy='17' r='3.4' fill='%23A8322A'/%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Domaine de Beauvent, vignerons à Bernex">
+<meta property="og:description" content="Seize hectares de vigne au-dessus de Genève. Le caveau ouvre onze heures par semaine.">
+<meta property="og:url" content="https://timoteoadrogue.github.io/domaine-de-beauvent/">
+<meta property="og:image" content="https://timoteoadrogue.github.io/domaine-de-beauvent/assets/img/hero-ending.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Aller au contenu</a>
+
+<div class="env" aria-hidden="true"><span class="env-mist"></span><span class="env-grain"></span></div>
+
+<nav class="nav" aria-label="Navigation principale">
+  <div class="nav-in">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M2 24 C 10 22, 13 12, 20 9 C 25 7, 28 8, 30 10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="23" cy="17" r="3.4" fill="var(--accent)"/>
+      </svg>
+      <span class="brand-name">Domaine de Beauvent</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#coteau">Le coteau</a></li>
+      <li><a href="#vins">Les vins</a></li>
+      <li><a href="#semaine">La semaine</a></li>
+      <li><a href="#avis">Avis</a></li>
+    </ul>
+    <a class="btn btn-accent nav-cta" href="#venir">Venir déguster</a>
+  </div>
+</nav>
+
+<main id="main" tabindex="-1">
+
+<!-- ============ HÉRO ============ -->
+<section class="hero" id="top">
+  <div class="stage">
+
+    <div class="poster" aria-hidden="true"></div>
+    <video id="hero-video" preload="none" muted playsinline aria-hidden="true" tabindex="-1"></video>
+    <div class="scrim" aria-hidden="true"></div>
+
+    <svg class="ring" viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-dasharray="126" style="stroke-dashoffset:var(--ld,126)"/>
+    </svg>
+
+    <!-- Le héro scrubé, sur grand écran -->
+    <div class="bands" aria-hidden="true">
+      <div class="band band-left" data-a="0" data-b="0.12" data-entrance="drift" data-spread="0.5">
+        <p class="band-h split">Seize hectares de vigne, à vingt minutes de Genève.</p>
+      </div>
+      <div class="band band-left" data-a="0.16" data-b="0.30" data-entrance="blur" data-ramp="0.03">
+        <p class="band-h split">Bernard et Jérôme Cruz, vignerons à Bernex.</p>
+      </div>
+      <div class="band band-left" data-a="0.34" data-b="0.46" data-entrance="grid" data-spread="0.62">
+        <p class="band-h split">Seize cépages, vendangés à la main.</p>
+      </div>
+      <div class="band band-left" data-a="0.52" data-b="0.66" data-entrance="approach" data-ramp="0.03">
+        <p class="band-h split">Au bout du rang, la porte est ouverte.</p>
+      </div>
+      <div class="band band-settle" data-a="0.74" data-b="1" data-entrance="rise" data-ramp="0.08">
+        <p class="band-h split">Le caveau ouvre onze heures par semaine.</p>
+        <p class="band-sub">Mardi à vendredi, 17h à 19h. Samedi, 9h à 12h.</p>
+        <p class="band-cta"><a class="btn btn-accent" href="#venir">Venir déguster</a></p>
+      </div>
+    </div>
+
+    <!-- Le héro fixe: téléphones, tablettes en portrait, mouvement réduit -->
+    <div class="static-hero">
+      <h1 class="static-h">Seize hectares de vigne, à vingt minutes de Genève.</h1>
+      <p class="static-sub">Le caveau de la famille Cruz ouvre onze heures par semaine. Mardi à vendredi, 17h à 19h. Samedi, 9h à 12h.</p>
+      <p><a class="btn btn-accent" href="#venir">Venir déguster</a></p>
+    </div>
+
+    <!-- Le titre réel de la page, pour les lecteurs d'écran et les moteurs -->
+    <h1 class="sr-only">Domaine de Beauvent, seize hectares de vigne à Bernex, à vingt minutes de Genève. Le caveau ouvre onze heures par semaine.</h1>
+
+  </div>
+</section>
+
+<!-- ============ LA BARRE DU CAVEAU ============ -->
+<section class="status" id="etat" aria-label="État du caveau">
+  <div class="status-in">
+    <span class="status-dot" data-open="false" aria-hidden="true"></span>
+    <p class="status-text" id="status-text">Le caveau est fermé. Il rouvre mardi à 17h.</p>
+    <p class="status-count" id="status-count" aria-live="polite"></p>
+    <p class="status-hours">Mar<span class="sep">,</span> mer<span class="sep">,</span> jeu<span class="sep">,</span> ven 17h à 19h<span class="dot">·</span>sam 9h à 12h</p>
+  </div>
+</section>
+
+<!-- ============ LE COTEAU ============ -->
+<section class="coteau" id="coteau">
+  <div class="coteau-in reveal">
+    <div class="coteau-text">
+      <h2 class="h2 part">Le coteau fait le vin. Nous faisons le reste.</h2>
+      <p class="lede part">Seize hectares entre le coteau de Lully et Bernex, en AOC Genève. De l'argile et de la molasse, plein sud sur le bassin lémanique.</p>
+      <p class="body part">Pas d'herbicide, vendanges à la main, et une cave qui tourne à l'énergie solaire. Le domaine est certifié GRTA, la garantie que tout sort d'ici.</p>
+      <dl class="facts part">
+        <div><dt>Hectares</dt><dd><span class="num" data-count="16">16</span></dd></div>
+        <div><dt>Cépages</dt><dd><span class="num" data-count="16">16</span></dd></div>
+        <div><dt>Heures par semaine</dt><dd><span class="num" data-count="11">11</span></dd></div>
+        <div><dt>Certification</dt><dd>GRTA</dd></div>
+      </dl>
+    </div>
+    <figure class="coteau-fig part" data-parallax="26">
+      <img src="assets/img/coteau.jpg" alt="Les rangs de vigne du domaine sur le coteau, dans la lumière du matin." width="1920" height="1280" loading="lazy" decoding="async">
+    </figure>
+  </div>
+
+  <svg class="ridge" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+    <path class="ridge-line" d="M0 74 C 180 66, 300 22, 520 26 C 700 29, 800 62, 980 52 C 1090 46, 1150 34, 1200 30" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  </svg>
+</section>
+
+<!-- ============ LES VINS ============ -->
+<section class="vins" id="vins">
+  <div class="vins-head reveal">
+    <h2 class="h2 part">Seize cépages, une vingtaine de vins.</h2>
+  </div>
+
+  <div class="vins-grid reveal">
+    <article class="vin part vin-blanc">
+      <h3>Blancs</h3>
+      <p>Chasselas, Aligoté 1er Cru, Chardonnay, Sauvignon 1er Cru, Chenin.</p>
+    </article>
+    <article class="vin part vin-rose">
+      <h3>Rosés</h3>
+      <p>Œil-de-Perdrix, Rosé de Gamay.</p>
+    </article>
+    <article class="vin part vin-rouge">
+      <img class="vin-img" src="assets/img/vendanges.jpg" alt="Des mains de vendangeur tenant une grappe de raisin noir au-dessus d'une caisse en bois." width="1400" height="933" loading="lazy" decoding="async">
+      <h3>Rouges</h3>
+      <p>Gamay, Pinot Noir 1er Cru, Gamaret, Merlot 1er Cru, Syrah 1er Cru, Mondeuse 1er Cru.</p>
+    </article>
+  </div>
+
+  <div class="cuvees reveal">
+    <p class="cuvees-label part">Et les cuvées qui ne ressemblent qu'à elles</p>
+    <div class="cuvees-rail part" id="rail" tabindex="0" aria-label="Les cuvées du domaine, faites glisser pour parcourir">
+      <ul class="cuvees-list">
+        <li>Abysses</li><li>Nymphe</li><li>Nature Rouge</li>
+        <li>Esprit de Genève</li><li>Champ Fleury</li><li>Éphémère</li>
+        <li>Œil-de-Perdrix</li><li>Aligoté 1er Cru</li><li>Mondeuse 1er Cru</li>
+      </ul>
+    </div>
+    <p class="cuvees-price part">De 10 à 34 francs la bouteille.</p>
+  </div>
+</section>
+
+<!-- ============ LA SEMAINE, LE MOMENT INTERACTIF ============ -->
+<section class="semaine" id="semaine">
+  <div class="semaine-in reveal">
+    <h2 class="h2 part">Onze heures. Les voici.</h2>
+    <p class="semaine-hint part" id="semaine-hint">Maintenez le bouton pour ouvrir la semaine.</p>
+
+    <div class="week part" id="week">
+      <div class="week-day" data-day="Lundi"><span class="d">Lun</span><span class="track"></span></div>
+      <div class="week-day" data-day="Mardi"><span class="d">Mar</span><span class="track"><b class="slot" data-h="2"></b></span></div>
+      <div class="week-day" data-day="Mercredi"><span class="d">Mer</span><span class="track"><b class="slot" data-h="2"></b></span></div>
+      <div class="week-day" data-day="Jeudi"><span class="d">Jeu</span><span class="track"><b class="slot" data-h="2"></b></span></div>
+      <div class="week-day" data-day="Vendredi"><span class="d">Ven</span><span class="track"><b class="slot" data-h="2"></b></span></div>
+      <div class="week-day" data-day="Samedi"><span class="d">Sam</span><span class="track"><b class="slot slot-am" data-h="3"></b></span></div>
+      <div class="week-day" data-day="Dimanche"><span class="d">Dim</span><span class="track"></span></div>
+      <div class="week-scale" aria-hidden="true"><span>8h</span><span>12h</span><span>16h</span><span>20h</span></div>
+    </div>
+
+    <div class="week-ctl part">
+      <button class="hold" id="hold" type="button" aria-describedby="semaine-hint">
+        <span class="hold-fill" aria-hidden="true"></span>
+        <span class="hold-label">Maintenir</span>
+      </button>
+      <p class="week-count" id="week-count"><b>0</b> / 11 heures</p>
+    </div>
+
+    <ul class="promise" id="promise">
+      <li>La dégustation est libre.</li>
+      <li>Elle ne coûte rien.</li>
+      <li>Et personne ne vous demandera d'acheter.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section class="avis" id="avis">
+  <div class="avis-in reveal">
+    <p class="avis-score part"><b>4,6</b> sur 53 avis Google</p>
+
+    <blockquote class="q q1 part">
+      <p>Superbes créations de vins qui sauront ravir vos papilles. Le tout avec un accueil des plus chaleureux et sympathique.</p>
+      <cite>Sebastien B, Local Guide</cite>
+    </blockquote>
+
+    <blockquote class="q q2 part">
+      <p>Très mignon tearoom, très accueillant, très bons produits et bon rapport qualité prix.</p>
+      <cite>C G, Local Guide</cite>
+    </blockquote>
+
+    <blockquote class="q q3 part">
+      <p>J'aime beaucoup ce vin rouge, c'est un cadeau de saison et un esprit nature.</p>
+      <cite>Local Guide</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="faq-in reveal">
+    <h2 class="h2 part">Avant de venir</h2>
+
+    <details class="part" name="faq">
+      <summary>Je n'y connais rien en vin.</summary>
+      <div class="faq-body"><div class="faq-inner"><p>Tant mieux, c'est plus simple. On vous demande ce que vous buvez d'habitude et on part de là. Personne ne vous fera passer un examen.</p></div></div>
+    </details>
+    <details class="part" name="faq">
+      <summary>Est-ce que je suis obligé d'acheter ?</summary>
+      <div class="faq-body"><div class="faq-inner"><p>Non. Vous pouvez goûter, discuter, et repartir les mains vides. Ça arrive tous les jours et ça ne pose aucun problème.</p></div></div>
+    </details>
+    <details class="part" name="faq">
+      <summary>La dégustation est payante ?</summary>
+      <div class="faq-body"><div class="faq-inner"><p>Non. Elle est offerte au caveau, pendant les heures d'ouverture.</p></div></div>
+    </details>
+    <details class="part" name="faq">
+      <summary>Il faut réserver ?</summary>
+      <div class="faq-body"><div class="faq-inner"><p>Pas pour venir goûter à deux ou trois. Pour un groupe, un appel suffit.</p></div></div>
+    </details>
+    <details class="part" name="faq">
+      <summary>C'est loin de Genève ?</summary>
+      <div class="faq-body"><div class="faq-inner"><p>Vingt minutes du centre. Rue de Bernex 265, et on se gare devant.</p></div></div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ VENIR ============ -->
+<section class="venir" id="venir">
+  <div class="venir-in reveal">
+
+    <div class="venir-info">
+      <h2 class="h2 part">Poussez la porte.</h2>
+
+      <div class="venir-block part">
+        <p class="k">Le caveau</p>
+        <p class="v">Rue de Bernex 265<br>1233 Bernex, Genève</p>
+        <p><a class="lnk" href="https://www.google.com/maps/place/Domaine+de+Beauvent/@46.1766266,6.0760685,17z" target="_blank" rel="noopener">Ouvrir dans Maps</a></p>
+      </div>
+
+      <div class="venir-block part">
+        <p class="k">Ouvert</p>
+        <p class="v">Mardi à vendredi, 17h à 19h<br>Samedi, 9h à 12h</p>
+      </div>
+
+      <div class="venir-block part">
+        <p class="k">Nous joindre</p>
+        <p class="v"><a class="lnk" href="tel:+41793073547">+41 79 307 35 47</a><br><a class="lnk" href="mailto:info@domainedebeauvent.ch">info@domainedebeauvent.ch</a></p>
+      </div>
+
+      <ul class="services part">
+        <li>Achats au caveau</li>
+        <li>Drive</li>
+        <li>Livraison</li>
+      </ul>
+
+      <figure class="venir-fig part" data-parallax="20">
+        <img src="assets/img/caveau.jpg" alt="Le comptoir du caveau sous la lampe, trois verres servis et des bouteilles alignées." width="1920" height="1280" loading="lazy" decoding="async">
+      </figure>
+    </div>
+
+    <form class="venir-form part" id="form" novalidate>
+      <div class="field">
+        <label for="f-nom">Votre nom</label>
+        <input id="f-nom" name="nom" type="text" autocomplete="name" required>
+        <p class="err" id="e-nom" hidden>Il nous faut un nom pour vous répondre.</p>
+      </div>
+      <div class="field">
+        <label for="f-mail">Votre e-mail</label>
+        <input id="f-mail" name="mail" type="email" autocomplete="email" required>
+        <p class="err" id="e-mail" hidden>Cette adresse ne semble pas complète.</p>
+      </div>
+      <div class="field">
+        <label for="f-msg">Votre message</label>
+        <textarea id="f-msg" name="msg" rows="4" placeholder="Nous serons quatre samedi matin, c'est possible ?" required></textarea>
+        <p class="err" id="e-msg" hidden>Dites-nous en deux mots ce qui vous amène.</p>
+      </div>
+      <button class="btn btn-accent" type="submit">Envoyer</button>
+      <p class="ok" id="form-ok" hidden>C'est parti. Votre message ouvre dans votre messagerie, il ne reste qu'à l'envoyer.</p>
+    </form>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <p class="foot-name">Domaine de Beauvent</p>
+    <p>Rue de Bernex 265, 1233 Bernex, Genève, Suisse</p>
+    <p><a class="lnk" href="tel:+41793073547">+41 79 307 35 47</a><span class="dot">·</span><a class="lnk" href="mailto:info@domainedebeauvent.ch">info@domainedebeauvent.ch</a></p>
+    <p>Mardi à vendredi 17h à 19h, samedi 9h à 12h. Certifié GRTA.</p>
+    <p class="foot-legal">La vente d'alcool est interdite aux personnes de moins de 18 ans. À consommer avec modération.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
