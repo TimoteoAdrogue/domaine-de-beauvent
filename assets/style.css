@@ -185,7 +185,9 @@ main,.nav,.foot{position:relative;z-index:1}
    la téléchargent. La vidéo et son poster restent derrière les portes JS. */
 .static-hero{display:none;position:absolute;inset:0;flex-direction:column;justify-content:flex-end;
   padding:0 var(--pad) clamp(3rem,9vh,5.5rem);color:#F2F5EE;text-shadow:var(--tshadow);
-  background:url('img/hero-ending.jpg') center/cover no-repeat}
+  background:url('img/hero-ending.jpg') center/cover no-repeat;
+  background-image:image-set(url('img/hero-ending.avif') type('image/avif'),
+                             url('img/hero-ending.jpg') type('image/jpeg'))}
 .static-hero::before{content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(to top,rgba(4,10,7,.88) 0%,rgba(4,10,7,.62) 38%,rgba(4,10,7,.12) 78%,rgba(4,10,7,.02) 100%)}
 .static-hero>*{position:relative}
