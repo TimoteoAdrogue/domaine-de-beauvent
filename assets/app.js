@@ -65,25 +65,12 @@ setInterval(majStatut, 60000);
 /* =========================================================
    2. LE HÉRO SCRUBÉ
    ========================================================= */
-/* Trois tailles du film. On sert celle que l'écran affiche vraiment: au-delà,
-   ce sont des pixels payés en fluidité pour rien, puisque le coût de décodage
-   d'une image commande le nombre d'images que le défilement peut afficher. */
-var FILMS = [
-  { largeur: 1280, url: 'assets/hero-scrub-1280.mp4', octets: 17044756 },
-  { largeur: 1600, url: 'assets/hero-scrub-1600.mp4', octets: 24104761 },
-  { largeur: 1920, url: 'assets/hero-scrub-1920.mp4', octets: 32118688 }
-];
-function choisirFilm() {
-  /* la scène est en plein écran et le film la remplit en "cover",
-     donc la largeur réellement affichée est le plus grand des deux */
-  var besoin = Math.max(window.innerWidth, window.innerHeight * 16 / 9);
-  if (besoin <= 1400) return FILMS[0];
-  if (besoin <= 1800) return FILMS[1];
-  return FILMS[2];
-}
-var FILM = choisirFilm();
-var VIDEO_URL = FILM.url;
-var VIDEO_BYTES = FILM.octets;
+/* Un seul film, en 1600, pour tout le monde.
+   Servir du 1920 aux grands écrans a été essayé et retiré: le coût de décodage
+   d'une image commande le nombre d'images que le défilement peut afficher, et
+   la fluidité tombait de 48 à 33 images par seconde. La netteté ne vaut pas ça. */
+var VIDEO_URL = 'assets/hero-scrub.mp4';
+var VIDEO_BYTES = 22020332;
 var POSTER_URL = 'assets/img/hero-poster.jpg';
 
 var hero = document.querySelector('.hero');

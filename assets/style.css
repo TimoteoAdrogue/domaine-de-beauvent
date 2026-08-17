@@ -188,6 +188,15 @@ main,.nav,.foot{position:relative;z-index:1}
   background:url('img/hero-ending.jpg') center/cover no-repeat;
   background-image:image-set(url('img/hero-ending.avif') type('image/avif'),
                              url('img/hero-ending.jpg') type('image/jpeg'))}
+
+/* Sur un écran vertical, une image composée pour le vertical: les rangs
+   encadrent, la porte éclairée est en haut, et le bas est un chemin lisse
+   où le texte se pose. L'image large ne sert plus qu'aux cas larges
+   (mouvement réduit sur ordinateur), où elle n'est pas rognée. */
+@media (orientation:portrait){
+  .static-hero{background-image:image-set(url('img/hero-phone.avif') type('image/avif'),
+                                          url('img/hero-phone.jpg') type('image/jpeg'))}
+}
 .static-hero::before{content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(to top,rgba(4,10,7,.88) 0%,rgba(4,10,7,.62) 38%,rgba(4,10,7,.12) 78%,rgba(4,10,7,.02) 100%)}
 .static-hero>*{position:relative}
