@@ -66,7 +66,7 @@ setInterval(majStatut, 60000);
    2. LE HÉRO SCRUBÉ
    ========================================================= */
 var VIDEO_URL = 'assets/hero-scrub.mp4';
-var VIDEO_BYTES = 9359919;
+var VIDEO_BYTES = 17222606;
 var POSTER_URL = 'assets/img/hero-poster.jpg';
 
 var hero = document.querySelector('.hero');
